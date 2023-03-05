@@ -6,9 +6,9 @@
 
 <div align="center">
 
-# nonebot-plugin-example
+# nonebot-plugin-sanae
 
-_✨ NoneBot 插件简单描述 ✨_
+_✨ 插件描述 ✨_
 
 
 <a href="./LICENSE">
@@ -21,17 +21,19 @@ _✨ NoneBot 插件简单描述 ✨_
 
 </div>
 
-这是一个 nonebot2 插件项目的模板库, 你可以直接使用本模板创建你的 nonebot2 插件项目的仓库
+这是一个 nonebot2 插件, 你可以直接使用本插件在plugin层连接ob11应用端
 
-模板库使用方法:
-1. 点击仓库中的 "Use this template" 按钮, 输入仓库名与描述, 点击 "  Create repository from template" 创建仓库
-2. 在创建好的新仓库中, 在 "Add file" 菜单中选择 "Create new file", 在新文件名处输入`LICENSE`, 此时在右侧会出现一个 "Choose a license template" 按钮, 点击此按钮选择开源协议模板, 然后在最下方提交新文件到主分支
-3. 全局替换`owner`为仓库所有者ID; 全局替换`nonebot-plugin-example`为插件名; 全局替换`nonebot_plugin_example`为包名; 修改 python 徽标中的版本为你插件的运行所需版本
-4. 修改 README 中的插件名和插件描述, 并在下方填充相应的内容
+插件使用方法:
+1.插件运行成功后会生成ini配置，在配置内设置ws地址和端口,暂时只支持ws连接
+2. 插件连接成功后会有日志
 
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+方便在nb内连接早苗，
+也可用于nb连接另一个nb(待测试)
+或许可用于nb连接koishi
+也可用于连接其他#符合ob11标准的bot
+实现机器人套娃，最初级的分布式机器人(一个应用端放一些插件，然后多个nb，公网ip，然后用插件互联)
 
 ## 💿 安装
 
@@ -39,7 +41,7 @@ _✨ NoneBot 插件简单描述 ✨_
 <summary>使用 nb-cli 安装</summary>
 在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
 
-    nb plugin install nonebot-plugin-example
+    nb plugin install nonebot-plugin-sanae
 
 </details>
 
@@ -50,27 +52,27 @@ _✨ NoneBot 插件简单描述 ✨_
 <details>
 <summary>pip</summary>
 
-    pip install nonebot-plugin-example
+    pip install nonebot-plugin-sanae
 </details>
 <details>
 <summary>pdm</summary>
 
-    pdm add nonebot-plugin-example
+    pdm add nonebot-plugin-sanae
 </details>
 <details>
 <summary>poetry</summary>
 
-    poetry add nonebot-plugin-example
+    poetry add nonebot-plugin-sanae
 </details>
 <details>
 <summary>conda</summary>
 
-    conda install nonebot-plugin-example
+    conda install nonebot-plugin-sanae
 </details>
 
 打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
 
-    plugins = ["nonebot_plugin_example"]
+    plugins = ["nonebot_plugin_sanae"]
 
 </details>
 
@@ -80,8 +82,8 @@ _✨ NoneBot 插件简单描述 ✨_
 
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
-| 配置项1 | 是 | 无 | 配置说明 |
-| 配置项2 | 否 | 无 | 配置说明 |
+| sanae_ws | 是 | 无 | 配置说明 |
+| Sanae_port | 否 | 无 | 配置说明 |
 
 ## 🎉 使用
 ### 指令表
