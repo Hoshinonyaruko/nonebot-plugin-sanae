@@ -2,7 +2,7 @@
 
 [project]
 name = "nonebot-plugin-sanae"
-version = "0.0.1"
+version = "0.0.5"
 description = "sanae connecter"
 authors = [
     {name = "Hoshinonyaruko", email = "applegm@me.com"},
