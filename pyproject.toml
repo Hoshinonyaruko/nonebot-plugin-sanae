@@ -2,15 +2,20 @@
 name = "nonebot-plugin-sanae"
 version = "0.0.5"
 description = "sanae connecter"
-authors = ["cosmo <applegm@me.com>"]
+authors = ["Hoshinonyaruko <applegm@me.com>"]
 license = "MIT"
+homepage = "https://github.com/Hoshinonyaruko/nonebot-plugin-sanae"
+repository = "https://github.com/Hoshinonyaruko/nonebot-plugin-sanae"
 readme = "README.md"
-packages = [{include = "nonebot_plugin_sanae"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-nonebot2 = "^2.0.0-beta.3"
-aiohttp = "^3.8.3"
+nonebot2 = "^2.0.0-rc.1"
+nonebot-adapter-onebot = "^2.1.5"
+aiohttp = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.6.0"
 
 [build-system]
 requires = ["poetry-core"]
