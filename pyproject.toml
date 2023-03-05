@@ -1,0 +1,19 @@
+[tool.pdm]
+
+[project]
+name = "nonebot-plugin-sanae"
+version = "0.0.1"
+description = "sanae connecter"
+authors = [
+    {name = "Hoshinonyaruko", email = "applegm@me.com"},
+]
+dependencies = [
+    "asyncio>=3.4.3",
+    "aiohttp>=2.2.5",
+]
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
