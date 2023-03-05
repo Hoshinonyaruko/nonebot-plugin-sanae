@@ -1,21 +1,16 @@
-[tool.pdm]
-
-[project]
+[tool.poetry]
 name = "nonebot-plugin-sanae"
 version = "0.0.5"
 description = "sanae connecter"
-authors = [
-    {name = "Hoshinonyaruko", email = "applegm@me.com"},
-]
-dependencies = [
-    "aiohttp>=2.2.5",
-    "nonebot2>=2.0.0a10",
-    "nonebot-adapter-onebot>=2.2.1",
-]
-requires-python = ">=3.8,<4.0"
+authors = ["cosmo <applegm@me.com>"]
+license = "MIT"
 readme = "README.md"
-license = {text = "MIT"}
+packages = [{include = "nonebot_plugin_sanae"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
 
 [build-system]
-requires = ["pdm-backend >=0.4.1"]
-build-backend = "pdm.backend"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
